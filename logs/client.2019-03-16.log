@@ -1,0 +1,38 @@
+2019-03-16 23:36:56,172 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2019-03-16 23:36:56,617 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 2412 (/Users/alfred/IdeaProjects/demo/target/classes started by alfred in /Users/alfred/IdeaProjects/demo)
+2019-03-16 23:36:56,662 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2019-03-16 23:36:57,918 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-03-16 23:36:59,339 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2019-03-16 23:36:59,472 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 2638 ms
+2019-03-16 23:36:59,909 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-16 23:37:00,520 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2019-03-16 23:37:00,524 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 4.675 seconds (JVM running for 5.679)
+2019-03-16 23:37:26,404 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-16 23:37:26,421 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 16 ms
+2019-03-16 23:37:32,656 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2019-03-16 23:37:32,658 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/aop/test
+2019-03-16 23:37:32,658 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:37) INFO  --> 请求方式:GET
+2019-03-16 23:37:32,661 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.AopController.getTest()
+2019-03-16 23:37:32,662 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:39) INFO  --> 请求类方法参数:[]
+2019-03-16 23:37:32,663 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2019-03-16 23:39:18,653 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-10] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-16 23:39:22,937 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2019-03-16 23:39:23,419 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 2416 (/Users/alfred/IdeaProjects/demo/target/classes started by alfred in /Users/alfred/IdeaProjects/demo)
+2019-03-16 23:39:23,421 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2019-03-16 23:39:24,448 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2019-03-16 23:39:25,248 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2019-03-16 23:39:25,377 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1885 ms
+2019-03-16 23:39:25,734 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-16 23:39:26,282 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2019-03-16 23:39:26,286 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 3.492 seconds (JVM running for 4.299)
+2019-03-16 23:39:31,624 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-16 23:39:31,633 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 9 ms
+2019-03-16 23:39:31,654 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2019-03-16 23:39:31,655 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/aop/test
+2019-03-16 23:39:31,655 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:37) INFO  --> 请求方式:GET
+2019-03-16 23:39:31,657 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.AopController.getTest()
+2019-03-16 23:39:31,658 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:39) INFO  --> 请求类方法参数:[]
+2019-03-16 23:39:31,660 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2019-03-16 23:39:31,665 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:47) INFO  --> --------------返回内容----------------
+2019-03-16 23:39:31,737 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:48) INFO  --> Response内容:{"code":200,"msg":"success","success":true}
+2019-03-16 23:39:31,737 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:49) INFO  --> --------------返回内容----------------
