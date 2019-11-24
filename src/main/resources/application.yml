@@ -3,3 +3,7 @@ server:
 spring:
   profiles:
     active: dev
+
+alfred:
+  test: '测试'
+
