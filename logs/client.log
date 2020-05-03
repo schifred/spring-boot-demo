@@ -750,6 +750,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 're
 2019-03-17 22:55:54,700 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:40) INFO  --> ===============请求内容===============
 2019-03-17 23:16:18,311 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [Thread-16] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'taskScheduler'
 2019-03-17 23:16:18,349 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-16] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+<<<<<<< HEAD
 2020-05-03 17:06:35,225 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
 2020-05-03 17:06:35,813 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3797 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
 2020-05-03 17:06:35,816 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
@@ -1164,3 +1165,5 @@ Consider defining a bean of type 'com.example.demo.dao.mapper.CountryMapper' in 
 2020-05-03 18:13:57,335 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:39) INFO  --> 请求类方法参数:[1]
 2020-05-03 18:13:57,335 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:40) INFO  --> ===============请求内容===============
 2020-05-03 18:14:05,093 com.alibaba.druid.pool.DruidDataSource [http-nio-9090-exec-1] (DruidDataSource.java:928) INFO  --> {dataSource-1} inited
+=======
+>>>>>>> 63c8a1609f719ba856dd3a6155bcb64d04c97538

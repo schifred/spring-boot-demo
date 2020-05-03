@@ -72,12 +72,15 @@
 			<version>1.3.2</version>
 		</dependency>
 
+<<<<<<< HEAD
 		<dependency>
 		<groupId>tk.mybatis</groupId>
 			<artifactId>mapper-spring-boot-starter</artifactId>
 			<version>2.1.5</version>
 		</dependency>
 
+=======
+>>>>>>> 63c8a1609f719ba856dd3a6155bcb64d04c97538
 		<!-- druid 数据库监控驱动 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
