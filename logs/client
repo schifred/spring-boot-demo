@@ -1,0 +1,414 @@
+2020-05-03 17:06:35,225 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:06:35,813 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3797 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:06:35,816 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:06:37,701 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:06:37,701 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:06:37,773 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:06:37,778 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:06:37,819 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2020-05-03 17:06:38,487 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ebf0a73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:06:39,248 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:06:39,627 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3647 ms
+2020-05-03 17:06:40,210 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:557) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperController': Unsatisfied dependency expressed through field 'mybatisMapperService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperService': Unsatisfied dependency expressed through field 'countryMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.dao.mapper.CountryMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-03 17:06:40,250 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-03 17:06:40,386 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field countryMapper in com.example.demo.service.MybatisMapperService required a bean of type 'com.example.demo.dao.mapper.CountryMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.dao.mapper.CountryMapper' in your configuration.
+
+2020-05-03 17:08:44,953 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:08:46,019 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3810 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:08:46,020 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:08:48,700 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:08:48,701 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:08:48,888 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:08:48,900 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:08:49,106 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 105ms. Found 0 repository interfaces.
+2020-05-03 17:08:50,209 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a353192e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:08:51,054 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:08:51,493 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 5189 ms
+2020-05-03 17:08:52,410 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:557) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperController': Unsatisfied dependency expressed through field 'mybatisMapperService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperService': Unsatisfied dependency expressed through field 'countryMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.dao.mapper.CountryMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-03 17:08:52,451 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-03 17:08:52,608 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field countryMapper in com.example.demo.service.MybatisMapperService required a bean of type 'com.example.demo.dao.mapper.CountryMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.dao.mapper.CountryMapper' in your configuration.
+
+2020-05-03 17:30:19,147 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:30:19,975 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3839 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:30:19,977 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:30:21,722 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:30:21,723 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:30:21,809 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:30:21,813 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:30:21,855 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2020-05-03 17:30:22,569 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$16f90904] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:30:23,301 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:30:23,653 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3507 ms
+2020-05-03 17:30:24,188 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:557) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperController': Unsatisfied dependency expressed through field 'mybatisMapperService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperService': Unsatisfied dependency expressed through field 'countryMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.dao.mapper.CountryMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-03 17:30:24,222 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-03 17:30:24,362 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field countryMapper in com.example.demo.service.MybatisMapperService required a bean of type 'com.example.demo.dao.mapper.CountryMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.dao.mapper.CountryMapper' in your configuration.
+
+2020-05-03 17:30:46,668 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:30:47,398 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3842 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:30:47,405 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:30:49,260 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:30:49,260 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:30:49,337 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:30:49,343 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:30:49,409 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2020-05-03 17:30:50,529 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3dddb546] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:30:51,422 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:30:51,719 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 4240 ms
+2020-05-03 17:30:52,648 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:557) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperController': Unsatisfied dependency expressed through field 'mybatisMapperService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperService': Unsatisfied dependency expressed through field 'countryMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.dao.mapper.CountryMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-03 17:30:52,677 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-03 17:30:52,797 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field countryMapper in com.example.demo.service.MybatisMapperService required a bean of type 'com.example.demo.dao.mapper.CountryMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.dao.mapper.CountryMapper' in your configuration.
+
+2020-05-03 17:32:51,877 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:32:52,641 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3848 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:32:52,643 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:32:54,522 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:32:54,523 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:32:54,619 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:32:54,624 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:32:54,671 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-05-03 17:32:55,438 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27ab3d7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:32:56,168 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:32:56,335 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3564 ms
+2020-05-03 17:32:57,008 org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] (AbstractApplicationContext.java:557) WARN  --> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperController': Unsatisfied dependency expressed through field 'mybatisMapperService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisMapperService': Unsatisfied dependency expressed through field 'countryMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.dao.mapper.CountryMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-05-03 17:32:57,039 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] (ConditionEvaluationReportLoggingListener.java:142) INFO  --> 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-03 17:32:57,181 org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] (LoggingFailureAnalysisReporter.java:42) ERROR --> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field countryMapper in com.example.demo.service.MybatisMapperService required a bean of type 'com.example.demo.dao.mapper.CountryMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.dao.mapper.CountryMapper' in your configuration.
+
+2020-05-03 17:38:48,937 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:38:49,643 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3864 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:38:49,643 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:38:51,911 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'countryMapper' and 'com.example.demo.dao.mapper.CountryMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:38:51,911 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:38:51,912 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:38:52,013 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:38:52,027 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:38:52,072 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2020-05-03 17:38:52,788 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bbdeec6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:38:53,468 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:38:53,631 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3875 ms
+2020-05-03 17:38:55,235 springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] (PropertySourcedRequestMappingHandlerMapping.java:69) INFO  --> Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-03 17:38:55,556 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:38:55,865 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2020-05-03 17:38:55,881 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-03 17:38:55,883 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-03 17:38:55,884 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-03 17:38:55,885 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:83) INFO  --> Clear EntityHelper entityTableMap cache.
+2020-05-03 17:38:56,620 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'taskScheduler'
+2020-05-03 17:38:56,718 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:160) INFO  --> Context refreshed
+2020-05-03 17:38:56,755 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:163) INFO  --> Found 1 custom documentation plugin(s)
+2020-05-03 17:38:56,808 springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] (ApiListingReferenceScanner.java:41) INFO  --> Scanning for api listing references
+2020-05-03 17:38:56,997 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getTestUsingGET_1
+2020-05-03 17:38:57,086 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getUsingGET_1
+2020-05-03 17:38:57,135 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: indexUsingPOST_1
+2020-05-03 17:38:57,237 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-03 17:38:57,243 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 8.564 seconds (JVM running for 9.872)
+2020-05-03 17:39:30,712 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-05-03 17:39:30,727 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 14 ms
+2020-05-03 17:39:30,802 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 17:39:30,803 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/
+2020-05-03 17:39:30,803 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 17:39:30,806 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:38) INFO  --> 请求类方法:String com.example.demo.controller.ThymeleafController.index()
+2020-05-03 17:39:30,806 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:39) INFO  --> 请求类方法参数:[]
+2020-05-03 17:39:30,806 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 17:39:52,702 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-4] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-03 17:40:06,599 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-6] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-03 17:40:15,286 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-7] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-03 17:40:57,413 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-10] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-05-03 17:41:18,513 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 17:41:18,514 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/hello
+2020-05-03 17:41:18,515 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 17:41:18,516 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:38) INFO  --> 请求类方法:String com.example.demo.controller.HelloController.index()
+2020-05-03 17:41:18,516 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:39) INFO  --> 请求类方法参数:[]
+2020-05-03 17:41:18,517 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 17:41:40,617 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-5] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-03 17:45:10,896 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-7] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-03 17:45:32,409 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [Thread-20] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'taskScheduler'
+2020-05-03 17:45:32,475 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-20] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:45:38,862 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:45:39,827 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3890 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:45:39,828 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:45:41,684 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'countryMapper' and 'com.example.demo.dao.mapper.CountryMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:45:41,684 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:45:41,689 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:45:41,776 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:45:41,781 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:45:41,834 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2020-05-03 17:45:42,570 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b64ed7a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:45:43,243 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:45:43,394 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3453 ms
+2020-05-03 17:45:44,938 springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] (PropertySourcedRequestMappingHandlerMapping.java:69) INFO  --> Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-03 17:45:45,253 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:45:45,538 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2020-05-03 17:45:45,554 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-03 17:45:45,557 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-03 17:45:45,558 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-03 17:45:45,558 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:83) INFO  --> Clear EntityHelper entityTableMap cache.
+2020-05-03 17:45:46,126 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'taskScheduler'
+2020-05-03 17:45:46,215 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:160) INFO  --> Context refreshed
+2020-05-03 17:45:46,238 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:163) INFO  --> Found 1 custom documentation plugin(s)
+2020-05-03 17:45:46,288 springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] (ApiListingReferenceScanner.java:41) INFO  --> Scanning for api listing references
+2020-05-03 17:45:46,467 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getTestUsingGET_1
+2020-05-03 17:45:46,578 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getUsingGET_1
+2020-05-03 17:45:46,631 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: indexUsingPOST_1
+2020-05-03 17:45:46,721 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-03 17:45:46,727 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 8.145 seconds (JVM running for 9.635)
+2020-05-03 17:45:58,456 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-05-03 17:45:58,469 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 12 ms
+2020-05-03 17:45:58,514 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-1] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-03 17:46:02,112 org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-9090-exec-2] (AbstractHandlerExceptionResolver.java:197) WARN  --> Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'id' for method parameter of type int]
+2020-05-03 17:46:41,427 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [Thread-19] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'taskScheduler'
+2020-05-03 17:46:41,466 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-19] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:46:47,571 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:46:48,413 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3897 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:46:48,416 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:46:50,460 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'countryMapper' and 'com.example.demo.dao.mapper.CountryMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:46:50,461 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:46:50,461 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:46:50,528 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:46:50,532 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:46:50,580 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2020-05-03 17:46:51,249 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54299e28] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:46:51,935 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:46:52,253 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3662 ms
+2020-05-03 17:46:53,854 springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] (PropertySourcedRequestMappingHandlerMapping.java:69) INFO  --> Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-03 17:46:54,200 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:46:54,527 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2020-05-03 17:46:54,544 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-03 17:46:54,546 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-03 17:46:54,547 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-03 17:46:54,547 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:83) INFO  --> Clear EntityHelper entityTableMap cache.
+2020-05-03 17:46:55,322 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'taskScheduler'
+2020-05-03 17:46:55,415 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:160) INFO  --> Context refreshed
+2020-05-03 17:46:55,443 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:163) INFO  --> Found 1 custom documentation plugin(s)
+2020-05-03 17:46:55,505 springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] (ApiListingReferenceScanner.java:41) INFO  --> Scanning for api listing references
+2020-05-03 17:46:55,695 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getTestUsingGET_1
+2020-05-03 17:46:55,784 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getUsingGET_1
+2020-05-03 17:46:55,849 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: indexUsingPOST_1
+2020-05-03 17:46:55,951 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-03 17:46:55,957 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 8.673 seconds (JVM running for 10.242)
+2020-05-03 17:46:58,106 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-05-03 17:46:58,122 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 16 ms
+2020-05-03 17:46:58,174 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 17:46:58,175 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/getCountry/999
+2020-05-03 17:46:58,176 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 17:46:58,178 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.MybatisMapperController.get(int)
+2020-05-03 17:46:58,179 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:39) INFO  --> 请求类方法参数:[999]
+2020-05-03 17:46:58,179 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 17:47:05,728 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 17:47:05,730 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/getCountry/999
+2020-05-03 17:47:05,731 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 17:47:05,731 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.MybatisMapperController.get(int)
+2020-05-03 17:47:05,732 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:39) INFO  --> 请求类方法参数:[999]
+2020-05-03 17:47:05,733 com.example.demo.aop.LogAspect [http-nio-9090-exec-2] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 17:47:16,006 com.example.demo.aop.LogAspect [http-nio-9090-exec-4] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 17:47:16,007 com.example.demo.aop.LogAspect [http-nio-9090-exec-4] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/getCountry/1
+2020-05-03 17:47:16,007 com.example.demo.aop.LogAspect [http-nio-9090-exec-4] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 17:47:16,007 com.example.demo.aop.LogAspect [http-nio-9090-exec-4] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.MybatisMapperController.get(int)
+2020-05-03 17:47:16,008 com.example.demo.aop.LogAspect [http-nio-9090-exec-4] (LogAspect.java:39) INFO  --> 请求类方法参数:[1]
+2020-05-03 17:47:16,008 com.example.demo.aop.LogAspect [http-nio-9090-exec-4] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 17:49:11,722 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [Thread-20] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'taskScheduler'
+2020-05-03 17:49:11,797 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-20] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:49:16,289 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:49:16,947 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3905 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:49:16,949 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:49:18,643 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'countryMapper' and 'com.example.demo.dao.mapper.CountryMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:49:18,643 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:49:18,644 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:49:18,723 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:49:18,730 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:49:18,798 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 45ms. Found 0 repository interfaces.
+2020-05-03 17:49:19,376 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98e3c64b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:49:20,032 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:49:20,211 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3109 ms
+2020-05-03 17:49:21,634 springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] (PropertySourcedRequestMappingHandlerMapping.java:69) INFO  --> Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-03 17:49:21,927 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:49:22,186 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2020-05-03 17:49:22,203 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-03 17:49:22,205 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-03 17:49:22,206 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-03 17:49:22,207 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:83) INFO  --> Clear EntityHelper entityTableMap cache.
+2020-05-03 17:49:22,856 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'taskScheduler'
+2020-05-03 17:49:22,942 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:160) INFO  --> Context refreshed
+2020-05-03 17:49:22,965 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:163) INFO  --> Found 1 custom documentation plugin(s)
+2020-05-03 17:49:23,025 springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] (ApiListingReferenceScanner.java:41) INFO  --> Scanning for api listing references
+2020-05-03 17:49:23,181 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getTestUsingGET_1
+2020-05-03 17:49:23,272 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getUsingGET_1
+2020-05-03 17:49:23,323 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: indexUsingPOST_1
+2020-05-03 17:49:23,411 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-03 17:49:23,416 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 7.35 seconds (JVM running for 8.979)
+2020-05-03 17:49:37,590 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-05-03 17:49:37,603 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 12 ms
+2020-05-03 17:49:37,649 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 17:49:37,650 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/getCountry/1
+2020-05-03 17:49:37,650 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 17:49:37,652 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.MybatisMapperController.get(int)
+2020-05-03 17:49:37,652 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:39) INFO  --> 请求类方法参数:[1]
+2020-05-03 17:49:37,653 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 17:50:34,706 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [Thread-17] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'taskScheduler'
+2020-05-03 17:50:34,760 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-17] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:50:39,895 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 17:50:40,444 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3912 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 17:50:40,446 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 17:50:42,470 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'countryMapper' and 'com.example.demo.dao.mapper.CountryMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:50:42,471 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 17:50:42,472 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 17:50:42,570 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 17:50:42,574 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 17:50:42,628 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2020-05-03 17:50:43,353 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0e91a1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 17:50:43,975 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 17:50:44,255 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 3718 ms
+2020-05-03 17:50:45,496 springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] (PropertySourcedRequestMappingHandlerMapping.java:69) INFO  --> Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-03 17:50:45,843 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-03 17:50:46,059 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2020-05-03 17:50:46,081 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-03 17:50:46,083 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-03 17:50:46,084 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-03 17:50:46,084 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:83) INFO  --> Clear EntityHelper entityTableMap cache.
+2020-05-03 17:50:46,664 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'taskScheduler'
+2020-05-03 17:50:46,744 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:160) INFO  --> Context refreshed
+2020-05-03 17:50:46,775 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:163) INFO  --> Found 1 custom documentation plugin(s)
+2020-05-03 17:50:46,824 springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] (ApiListingReferenceScanner.java:41) INFO  --> Scanning for api listing references
+2020-05-03 17:50:47,006 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getTestUsingGET_1
+2020-05-03 17:50:47,086 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getUsingGET_1
+2020-05-03 17:50:47,136 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: indexUsingPOST_1
+2020-05-03 17:50:47,225 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-03 17:50:47,234 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 7.558 seconds (JVM running for 8.894)
+2020-05-03 17:50:52,512 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-05-03 17:50:52,525 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 13 ms
+2020-05-03 17:50:52,571 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 17:50:52,572 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/getCountry/1
+2020-05-03 17:50:52,572 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 17:50:52,574 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.MybatisMapperController.get(int)
+2020-05-03 17:50:52,575 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:39) INFO  --> 请求类方法参数:[1]
+2020-05-03 17:50:52,575 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 17:50:55,106 com.alibaba.druid.pool.DruidDataSource [http-nio-9090-exec-1] (DruidDataSource.java:928) INFO  --> {dataSource-1} inited
+2020-05-03 18:13:33,067 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [Thread-18] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'taskScheduler'
+2020-05-03 18:13:33,096 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-18] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-03 18:13:33,116 com.alibaba.druid.pool.DruidDataSource [Thread-18] (DruidDataSource.java:1823) INFO  --> {dataSource-1} closed
+2020-05-03 18:13:45,307 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2020-05-03 18:13:47,207 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 3973 (/Users/alfred/Downloads/spring-boot-demo-master/target/classes started by alfred in /Users/alfred/Downloads/spring-boot-demo-master)
+2020-05-03 18:13:47,209 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2020-05-03 18:13:50,538 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'countryMapper' and 'com.example.demo.dao.mapper.CountryMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 18:13:50,539 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:239) WARN  --> Skipping MapperFactoryBean with name 'mybatisUserAnnotationMapper' and 'com.example.demo.dao.mapper.MybatisUserAnnotationMapper' mapperInterface. Bean already defined with the same name!
+2020-05-03 18:13:50,540 org.mybatis.spring.mapper.ClassPathMapperScanner [main] (ClassPathMapperScanner.java:166) WARN  --> No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-05-03 18:13:50,623 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:244) INFO  --> Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-03 18:13:50,627 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:126) INFO  --> Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-05-03 18:13:50,661 org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] (RepositoryConfigurationDelegate.java:182) INFO  --> Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-05-03 18:13:51,288 org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] (PostProcessorRegistrationDelegate.java:330) INFO  --> Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d34c1cbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-03 18:13:51,859 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2020-05-03 18:13:52,124 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 4661 ms
+2020-05-03 18:13:53,358 springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] (PropertySourcedRequestMappingHandlerMapping.java:69) INFO  --> Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-05-03 18:13:53,680 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-03 18:13:53,946 org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [main] (WelcomePageHandlerMapping.java:61) INFO  --> Adding welcome page template: index
+2020-05-03 18:13:53,965 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-05-03 18:13:53,969 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-05-03 18:13:53,971 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:60) INFO  --> Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-05-03 18:13:53,971 tk.mybatis.mapper.autoconfigure.MapperCacheDisabler [main] (MapperCacheDisabler.java:83) INFO  --> Clear EntityHelper entityTableMap cache.
+2020-05-03 18:13:54,548 org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'taskScheduler'
+2020-05-03 18:13:54,632 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:160) INFO  --> Context refreshed
+2020-05-03 18:13:54,655 springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] (DocumentationPluginsBootstrapper.java:163) INFO  --> Found 1 custom documentation plugin(s)
+2020-05-03 18:13:54,701 springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] (ApiListingReferenceScanner.java:41) INFO  --> Scanning for api listing references
+2020-05-03 18:13:54,862 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getTestUsingGET_1
+2020-05-03 18:13:54,950 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: getUsingGET_1
+2020-05-03 18:13:55,001 springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [main] (CachingOperationNameGenerator.java:40) INFO  --> Generating unique operation named: indexUsingPOST_1
+2020-05-03 18:13:55,094 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2020-05-03 18:13:55,099 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 10.159 seconds (JVM running for 11.768)
+2020-05-03 18:13:57,261 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2020-05-03 18:13:57,277 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 16 ms
+2020-05-03 18:13:57,331 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2020-05-03 18:13:57,332 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/getCountry/1
+2020-05-03 18:13:57,332 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:37) INFO  --> 请求方式:GET
+2020-05-03 18:13:57,334 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.MybatisMapperController.get(int)
+2020-05-03 18:13:57,335 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:39) INFO  --> 请求类方法参数:[1]
+2020-05-03 18:13:57,335 com.example.demo.aop.LogAspect [http-nio-9090-exec-1] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2020-05-03 18:14:05,093 com.alibaba.druid.pool.DruidDataSource [http-nio-9090-exec-1] (DruidDataSource.java:928) INFO  --> {dataSource-1} inited

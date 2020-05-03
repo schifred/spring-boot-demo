@@ -1,0 +1,20 @@
+2019-03-12 21:37:01,936 org.hibernate.validator.internal.util.Version [background-preinit] (Version.java:21) INFO  --> HV000001: Hibernate Validator 6.0.14.Final
+2019-03-12 21:37:02,389 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:50) INFO  --> Starting DemoApplication on qiushenhaodeMBP.lan with PID 2228 (/Users/alfred/IdeaProjects/demo/target/classes started by alfred in /Users/alfred/IdeaProjects/demo)
+2019-03-12 21:37:02,390 com.example.demo.DemoApplication [main] (SpringApplication.java:679) INFO  --> The following profiles are active: dev
+2019-03-12 21:37:04,044 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:90) INFO  --> Tomcat initialized with port(s): 9090 (http)
+2019-03-12 21:37:04,169 org.springframework.web.context.ContextLoader [main] (ServletWebServerApplicationContext.java:296) INFO  --> Root WebApplicationContext: initialization completed in 1706 ms
+2019-03-12 21:37:04,638 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] (ExecutorConfigurationSupport.java:171) INFO  --> Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-12 21:37:04,855 org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] (TomcatWebServer.java:204) INFO  --> Tomcat started on port(s): 9090 (http) with context path ''
+2019-03-12 21:37:04,859 com.example.demo.DemoApplication [main] (StartupInfoLogger.java:59) INFO  --> Started DemoApplication in 3.067 seconds (JVM running for 3.757)
+2019-03-12 21:37:41,610 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:524) INFO  --> Initializing Servlet 'dispatcherServlet'
+2019-03-12 21:37:41,625 org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] (FrameworkServlet.java:546) INFO  --> Completed initialization in 14 ms
+2019-03-12 21:38:24,539 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:35) INFO  --> ===============请求内容===============
+2019-03-12 21:38:24,541 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:36) INFO  --> 请求地址:http://localhost:9090/request/pathVariableTest/122
+2019-03-12 21:38:24,541 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:37) INFO  --> 请求方式:GET
+2019-03-12 21:38:24,546 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:38) INFO  --> 请求类方法:Result com.example.demo.controller.RequestController.pathVariableTest(int)
+2019-03-12 21:38:24,547 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:39) INFO  --> 请求类方法参数:[122]
+2019-03-12 21:38:24,549 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:40) INFO  --> ===============请求内容===============
+2019-03-12 21:38:24,682 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:47) INFO  --> --------------返回内容----------------
+2019-03-12 21:38:24,800 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:48) INFO  --> Response内容:{"code":200,"msg":"success","success":true}
+2019-03-12 21:38:24,804 com.example.demo.aop.LogAspect [http-nio-9090-exec-5] (LogAspect.java:49) INFO  --> --------------返回内容----------------
+2019-03-12 22:24:09,859 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-9] (ExecutorConfigurationSupport.java:208) INFO  --> Shutting down ExecutorService 'applicationTaskExecutor'

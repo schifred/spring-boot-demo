@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.mapper.MybatisUserAnnotationMapper">
+    <select id="getUser" resultType="com.example.demo.dao.entity.User">
+        SELECT id,nickname FROM demo.user WHERE id = #{id}
+    </select>
+
+    <insert id="createUser" parameterType="java.util.Map">
+        INSERT INTO demo.user(nickname) VALUES (#{nickname})
+    </insert>
+
+    <update id="updateUser">
+      UPDATE demo.user SET nickname = #{nickName} WHERE id = #{id}
+    </update>
+
+
+    <delete id="delete">
+      DELETE FROM demo.user WHERE id = #{id}
+    </delete>
+</mapper>
