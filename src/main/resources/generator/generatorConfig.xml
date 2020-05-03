@@ -8,7 +8,9 @@
         <property name="endingDelimiter" value="`"/>
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <!-- 设置通用 Mapper 接口 -->
             <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <!-- 是否区分大小写 -->
             <property name="caseSensitive" value="true"/>
         </plugin>
 
