@@ -26,14 +26,10 @@ spring:
 
   mybatis:
     mapper-locations: classpath:mapper/*Mapper.xml
-<<<<<<< HEAD
     type-aliases-package: com.example.demo.dao.entity # 自动扫描 POJO
 
   mapper:
     notEmpty: true
-=======
-    type-aliases-package: com.example.entity
->>>>>>> 63c8a1609f719ba856dd3a6155bcb64d04c97538
 
   redis:
     database: 0 # 数据库索引
