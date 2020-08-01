@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
 @Data
-public class User {
+public class UserDTO {
     private Integer id;
 
     @NotBlank(message="用户名不能为空")

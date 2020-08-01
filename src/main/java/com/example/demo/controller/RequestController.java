@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.consts.Result;
-import com.example.demo.dao.entity.User;
+import com.example.demo.dto.UserDTO;
 import com.example.demo.utils.ResultUtil;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,13 +21,13 @@ public class RequestController extends BaseController {
     }
 
     @RequestMapping(value = "/requestBodyTest", method = RequestMethod.POST)
-    public Result requestBodyTest(@RequestBody User user){
+    public Result requestBodyTest(@RequestBody UserDTO user){
 
         return ResultUtil.success(user);
     }
 
     @RequestMapping(value = "/modelAttributeTest", method = RequestMethod.POST)
-    public Result modelAttributeTest(@ModelAttribute User user){
+    public Result modelAttributeTest(@ModelAttribute UserDTO user){
 
         return ResultUtil.success(user);
     }
