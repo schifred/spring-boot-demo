@@ -2,7 +2,7 @@ package com.example.demo.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.example.demo.dao.entity.Country;
-import com.example.demo.exception.Result;
+import com.example.demo.consts.Result;
 import com.example.demo.service.CountryService;
 import com.example.demo.utils.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;

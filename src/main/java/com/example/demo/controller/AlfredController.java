@@ -19,4 +19,5 @@ public class AlfredController {
     public String getTest(){
         return this.test;
     }
+    
 }

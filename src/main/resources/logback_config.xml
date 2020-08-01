@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- https://github.com/spring-projects/spring-boot/blob/v1.4.2.RELEASE/spring-boot/src/main/resources/org/springframework/boot/logging/logback/defaults.xml -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <!-- 读取 application.yml 配置 -->
+    <springProperty scope="context" name="APP_NAME" source="spring.application.name"/>
+    <springProperty scope="context" name="LOG_BASE_PATH" source="logging.file.path"/>
+    <springProperty scope="context" name="BASE_LEVEL" source="logging.level.all"/>
+    <springProperty scope="context" name="ROOT_LEVEL" source="logging.level.root"/>
+
+    <property name="LEVEL" value="${BASE_LEVEL}"/>
+    <property name="LOG_PATH" value="${LOG_BASE_PATH}/logs/${APP_NAME}"/>
+    <property name="ARCHIVE_LOG_PATH" value="${LOG_PATH}/archive/%d{yyyy-MM-dd}"/>
+    <!--设置自定义pattern属性-->
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS}|%X{traceId}| %-5level %logger{80} - %msg%n"/>
+
+    <!--控制台输出日志-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>${LOG_PATTERN}</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/info.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/info.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/warn.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/warn.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/error.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/error.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="CACHE-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/cache.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/cache.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="SPRING-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/spring.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/spring.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="MYBATIS-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/mybatis.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/mybatis.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="NETTY-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/netty.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/netty.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="FILTER-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/filter.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/filter.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="CONTROLLER-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/controller.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/controller.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="SERVICE-LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/service.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${ARCHIVE_LOG_PATH}/service.%d{yyyy-MM-dd}.log.%i</fileNamePattern>
+            <maxHistory>7</maxHistory>
+            <maxFileSize>50MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <springProfile name="prod,dev">
+        <logger name="org.apache.ibatis" level="${LEVEL}" additivity="false">
+            <appender-ref ref="MYBATIS-LOG"/>
+        </logger>
+
+        <logger name="org.mybatis.spring" level="${LEVEL}" additivity="false">
+            <appender-ref ref="MYBATIS-LOG"/>
+        </logger>
+
+        <logger name="com.alibaba.druid" level="${LEVEL}" additivity="false">
+            <appender-ref ref="MYBATIS-LOG"/>
+        </logger>
+
+        <logger name="io.netty" level="${LEVEL}" additivity="false">
+            <appender-ref ref="NETTY-LOG"/>
+        </logger>
+
+        <logger name="org.springframework" level="${LEVEL}" additivity="false">
+            <appender-ref ref="SPRING-LOG"/>
+        </logger>
+
+        <logger name="cache-log" level="${LEVEL}" additivity="false">
+            <appender-ref ref="CACHE-LOG"/>
+        </logger>
+        <logger name="javax.cache" level="${LEVEL}" additivity="false">
+            <appender-ref ref="CACHE-LOG"/>
+        </logger>
+
+        <logger name="com.example.demo.dao" level="${LEVEL}" additivity="false">
+            <appender-ref ref="MYBATIS-LOG"/>
+        </logger>
+
+        <logger name="com.example.demo.manager" level="${LEVEL}" additivity="false">
+            <appender-ref ref="SERVICE-LOG"/>
+        </logger>
+
+        <logger name="com.example.demo.service" level="${LEVEL}" additivity="false">
+            <appender-ref ref="SERVICE-LOG"/>
+        </logger>
+
+        <logger name="com.example.demo.controller" level="${LEVEL}" additivity="false">
+            <appender-ref ref="CONTROLLER-LOG"/>
+        </logger>
+
+        <logger name="com.example.demo.aop" level="${LEVEL}" additivity="false">
+            <appender-ref ref="CONTROLLER-LOG"/>
+        </logger>
+
+        <root level="${ROOT_LEVEL}">
+            <appender-ref ref="STDOUT"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="local">
+        <root level="${ROOT_LEVEL}">
+            <appender-ref ref="STDOUT"/>
+        </root>
+    </springProfile>
+</configuration>

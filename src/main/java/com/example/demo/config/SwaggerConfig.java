@@ -30,7 +30,7 @@ public class SwaggerConfig {
                 .title("文档标题")
                 .description("文档描述")
                 .contact(contact)   // 联系方式
-                .version("1.1.0")  // 版本
+                .version("1.0.0")  // 版本
                 .build();
     }
 }

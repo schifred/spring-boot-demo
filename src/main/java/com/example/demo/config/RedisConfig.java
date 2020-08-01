@@ -1,6 +1,7 @@
 package com.example.demo.config;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import redis.clients.jedis.JedisPoolConfig;
@@ -21,15 +22,20 @@ public class RedisConfig {
     private String password;
 
     @Bean
+    @ConfigurationProperties(prefix = "spring.redis.pool")
+    public JedisPoolConfig getJedisPoolConfig() {
+        return new JedisPoolConfig();
+    }
+
+    @Bean
     public ShardedJedisPool shardedJedisPool(){
-        JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
-        jedisPoolConfig.setMinIdle(100);
-        jedisPoolConfig.setMaxIdle(1000);
-        jedisPoolConfig.setMaxTotal(10000);
+        // 连接池配置
+        JedisPoolConfig jedisPoolConfig = getJedisPoolConfig();
         ArrayList<JedisShardInfo> arrayList = new ArrayList<>();
         JedisShardInfo redisShardInfo = new JedisShardInfo(host, port);
         redisShardInfo.setPassword(password);
         arrayList.add(redisShardInfo);
+        // ShardedJedisPool 一般用于 redis 多实例部署，读写分离、主从模式等
         return new ShardedJedisPool(jedisPoolConfig, arrayList);
     }
 }
