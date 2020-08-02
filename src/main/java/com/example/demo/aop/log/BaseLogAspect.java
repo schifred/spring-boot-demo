@@ -8,6 +8,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,9 +21,19 @@ public class BaseLogAspect {
 
         String[] paramNames = signature.getParameterNames();
         Map<String, String> paramsMap = new HashMap<>(paramNames.length);
+        log.info("请求地址: {}", paramNames);
         Object[] args = joinPoint.getArgs();
         for (int i = 0; i < paramNames.length; i++){
-            paramsMap.put(paramNames[i], JSON.toJSONString(args[i]));
+            Object arg = args[i];
+            if (arg instanceof HttpServletRequest){
+
+                // 响应被 JSON.toJSONString 处理后，图片校验码接口报错
+                // getOutputStream() has already been called for this response
+            } else if (arg instanceof HttpServletResponse) {
+
+            } else {
+                paramsMap.put(paramNames[i], JSON.toJSONString(arg));
+            }
         }
 
         log.info("===============请求内容===============");
