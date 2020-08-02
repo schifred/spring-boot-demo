@@ -1,42 +1,23 @@
 package com.example.demo.controller;
 
-import com.example.demo.DemoApplicationTests;
-import org.junit.Before;
+import com.example.demo.BaseTest;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = {DemoApplicationTests.class})
-@WebAppConfiguration
-@ContextConfiguration(locations= {"classpath*:application.yml", "classpath*:logback-config.xml"})
-public class UserControllerTest {
-    @Autowired
-    WebApplicationContext wac;// 注入 WebApplicationContext
+import javax.annotation.Resource;
 
-    private MockMvc mvc;
-
-    @Before
-    public void setUp() throws Exception {
-        mvc = MockMvcBuilders.webAppContextSetup(this.wac).build();// 初始化 mockMvc
-    }
+public class UserControllerTest extends BaseTest {
+    @Resource
+    UserController userController;
 
     @Test
     public void getUser() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/user/getUser?id=1001"))
             .andExpect(MockMvcResultMatchers.status().isOk())
-            .andExpect(MockMvcResultMatchers.content().contentType("application/json"))
-            .andExpect(MockMvcResultMatchers.content().string("{test: 123}"))
+            .andExpect(MockMvcResultMatchers.content().contentType("application/json;charset=UTF-8"))
+            .andExpect(MockMvcResultMatchers.content().string("{\"code\":200,\"msg\":\"success\",\"success\":true,\"data\":{\"id\":null,\"userName\":\"李四\",\"password\":\"123456\",\"mobile\":\"18888888888\",\"email\":\"lisi@test.com\"}}"))
             .andDo(MockMvcResultHandlers.print());
     }
 
