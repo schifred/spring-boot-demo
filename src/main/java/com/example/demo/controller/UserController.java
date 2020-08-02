@@ -8,6 +8,9 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +31,7 @@ public class UserController extends BaseController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id",value = "id", required = true, paramType = "query")
     })
+    @Cacheable(value = "userById", key = "#id")
     @GetMapping("/getUser")
     public Result getUser(
             @Pattern(regexp="^[1-9][0-9]*$",message="请输入正整数")
@@ -37,6 +41,7 @@ public class UserController extends BaseController {
     }
 
     @ApiOperation(value = "创建用户", httpMethod = "POST")
+    @CachePut(value = "userById", key = "#userDTO.id")
     @PostMapping("/createUser")
     public Result createUser(@Valid UserDTO userDTO, BindingResult result){
         if (result.hasErrors()) {
@@ -47,6 +52,7 @@ public class UserController extends BaseController {
     }
 
     @ApiOperation(value = "更新用户", httpMethod = "POST")
+    @CachePut(value = "userById", key = "#userDTO.id")
     @PostMapping("/updateUser")
     public Result updateUser(@Valid UserDTO userDTO, BindingResult result){
         if (result.hasErrors()) {
@@ -60,6 +66,7 @@ public class UserController extends BaseController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id",value = "id", required = true, paramType = "query")
     })
+    @CacheEvict(value = "userById", key = "#id")
     @PostMapping("/deleteUser")
     public Result deleteUser(
         @Pattern(regexp="^[1-9][0-9]*$",message="请输入正整数")
